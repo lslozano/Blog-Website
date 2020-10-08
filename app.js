@@ -15,4 +15,12 @@ app.get("/", (req, res) => {
   res.render("home", {homeContent: homeStartingContent});
 })
 
+app.get("/about", (req, res) => {
+  res.render("about", {aboutContent: aboutContent});
+})
+
+app.get("/contact", (req, res) => {
+  res.render("contact", {contactContent: contactContent});
+})
+
 app.listen(3000, () => console.log("Server listening on port 3000"));
